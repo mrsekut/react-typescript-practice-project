@@ -1,7 +1,11 @@
-import * as React from 'react'
+import * as React from "react";
 
-const Button: React.SFC<{}> = () => (
-  <p>hello</p>
-)
+interface IProps {
+  onClick: () => void;
+}
+
+const Button: React.SFC<IProps> = ({ onClick, ...props }) => (
+  <span onClick={onClick}>hello</span>
+);
 
 export default Button;
