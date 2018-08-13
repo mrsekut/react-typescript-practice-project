@@ -4,8 +4,8 @@ interface IProps {
   onClick: () => void;
 }
 
-const Button: React.SFC<IProps> = ({ onClick, ...props }) => (
-  <span onClick={onClick}>hello</span>
+const Button: React.SFC<IProps> = ({ onClick, ...props }: IProps) => (
+  <button onClick={onClick}>hello</button>
 );
 
 export default Button;
