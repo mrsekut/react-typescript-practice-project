@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`domのテスト VirtualDOMコンポーネントをレンダリング 1`] = `
+<div>
+  名前: 
+  Tom
+  <br />
+  年齢: 
+  40
+</div>
+`;
