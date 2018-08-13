@@ -6,8 +6,11 @@
     "interface-name": false,
     "ordered-imports": false,
     "jsx-boolean-value": false,
-    "jsx-no-lambda": false,
-    "no-any": true
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "jsx-no-lambda": false
   },
   "linterOptions": {
     "exclude": ["config/**/*.js", "node_modules/**/*.ts"]
