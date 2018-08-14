@@ -1,11 +1,12 @@
 import * as React from "react";
 
 interface IProps {
-  onClick: () => void;
+  children: any;
+  onClick?: () => void;
 }
 
-const Button: React.SFC<IProps> = ({ onClick, ...props }: IProps) => (
-  <button onClick={onClick}>hello</button>
+const Button: React.SFC<IProps> = ({ onClick, children, ...props }: IProps) => (
+  <button onClick={onClick}>{children}</button>
 );
 
 export default Button;

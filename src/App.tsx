@@ -22,7 +22,7 @@ class App extends React.Component<{}, {}> {
         </header>
 
         {/* tslint:disable-next-line */}
-        <Button onClick={() => console.log("oooo")} />
+        <Button onClick={() => console.log("oooo")}>hello</Button>
         <VirtualDOM data={data} />
         <InputField clickFunc={() => console.log("clickFunc")} />
         <SearchBox />

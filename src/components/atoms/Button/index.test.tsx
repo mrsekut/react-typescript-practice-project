@@ -8,7 +8,7 @@ import Button from "./index";
 describe("clickイベントのテスト", () => {
   test("Appコンポーネントにイベントを渡す", () => {
     const testFuncMock = jest.fn();
-    const subject = shallow(<Button onClick={testFuncMock} />);
+    const subject = shallow(<Button onClick={testFuncMock}>hello</Button>);
     subject.find("button").simulate("click");
     expect(testFuncMock).toHaveBeenCalled();
   });
