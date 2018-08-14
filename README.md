@@ -5,6 +5,7 @@
 - react
 - typescript
 - styled-components
+- storybook
 
 ### test tools
 
@@ -21,6 +22,10 @@
 ### start
 
 `$ npm start`
+
+### run storybook
+
+`$ npm run storybook`
 
 ### test start
 
