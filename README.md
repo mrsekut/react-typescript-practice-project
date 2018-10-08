@@ -1,27 +1,45 @@
-# React + TypeScript の最小のテストを試すためのリポジトリ
+# React 周辺ツールで使いたいものを使うリポジトリ
 
-## feature
+## Feature
 
 - react
 - typescript
 - styled-components
 - storybook
 
-### test tools
+### Test
 
-- react-addons-test-utils
-- jest
-  - ts-jest
-  - @types/jest
-- enzyme
+  <details><summary>more...</summary>
+  <p>
+  - react-addons-test-utils
+  - jest
+    - ts-jest
+    - @types/jest
+  - enzyme
 
-## how to use
+      </p>
+      </detail>
+
+### Other
+
+  <details><summary>more...</summary>
+  <p>
+  - 絵文字コミットメッセージ [参考リンク](https://qiita.com/nishina555/items/4b4bb79dc93398d4d0a1)
+
+      </p>
+      </detail>
+
+## How to Use
 
 `$ npm i`
 
 ### start
 
 `$ npm start`
+
+### typescript compile
+
+`$ tsc -w`
 
 ### run storybook
 
