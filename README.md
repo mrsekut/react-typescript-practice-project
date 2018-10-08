@@ -9,25 +9,25 @@
 
 ### Test
 
-  <details><summary>more...</summary>
-  <p>
+<details><summary>more...</summary>
+<p>
 
-    - react-addons-test-utils
-    - jest
-      - ts-jest
-      - @types/jest
-    - enzyme
-      </p>
-      </detail>
+- react-addons-test-utils
+- jest
+  - ts-jest
+  - @types/jest
+- enzyme
+  </p>
+  </detail>
 
 ### Other
 
-  <details><summary>more...</summary>
-  <p>
+<details><summary>more...</summary>
+<p>
 
-    - 絵文字コミットメッセージ [参考リンク](https://qiita.com/nishina555/items/4b4bb79dc93398d4d0a1)
-      </p>
-      </detail>
+- 絵文字コミットメッセージ [参考リンク](https://qiita.com/nishina555/items/4b4bb79dc93398d4d0a1)
+  </p>
+  </detail>
 
 ## How to Use
 
