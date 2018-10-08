@@ -1,5 +1,17 @@
 # 使ってみたいもの
 
+- projekut の名前変えよう
+- commit message に絵文字を使ってみよう
+
+## React
+
+- React Fragments
+
+## TypeScript
+
+- ECMAScript の新し目の機能
+  - pipeline operator とか
+
 ## テスト
 
 - Jest
@@ -14,9 +26,12 @@
 ## パフォーマンス
 
 - shouldComponentUpdate
+  - https://hfuji.hatenablog.jp/entry/2017/11/03/183243
+  - https://medium.com/@esamatti/react-js-pure-render-performance-anti-pattern-fb88c101332f
 - https://blog.logrocket.com/make-react-fast-again-part-1-performance-timeline-f7f39f676f58
 - アニメーションのパフォーマンス計測
   - https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations
+- react-perf-devtool
 
 ## TypeScript
 
@@ -55,7 +70,6 @@
 - grid-layout
   - https://coliss.com/articles/build-websites/operation/css/css-grid-vs-flexbox-which-should-you-choose.html
   - https://medium.com/@terrierscript/meguro-css-styled-component-css-grid-d8ce0264a89e
-  - https://speakerdeck.com/terrierscript/styled-component-plus-css-grid?slide=2
 
 ## デザインパターン
 
@@ -68,6 +82,8 @@
 - normalizr
 - ディレクトリ構成
   - https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
+- DI
+  - https://qiita.com/ovrmrw/items/c3ac8d7b4281e95dbec5
 
 ## 開発効率
 
@@ -126,9 +142,7 @@
 - pure-deep-equal
 - axios
 - parcel
-- ECMAScript の新し目の機能
-  - pipeline operator とか
-- React Fragments
+- formik
 
 - AMP
 
