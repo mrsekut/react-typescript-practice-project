@@ -11,12 +11,12 @@
 
   <details><summary>more...</summary>
   <p>
-  - react-addons-test-utils
-  - jest
-    - ts-jest
-    - @types/jest
-  - enzyme
 
+    - react-addons-test-utils
+    - jest
+      - ts-jest
+      - @types/jest
+    - enzyme
       </p>
       </detail>
 
@@ -24,8 +24,8 @@
 
   <details><summary>more...</summary>
   <p>
-  - 絵文字コミットメッセージ [参考リンク](https://qiita.com/nishina555/items/4b4bb79dc93398d4d0a1)
 
+    - 絵文字コミットメッセージ [参考リンク](https://qiita.com/nishina555/items/4b4bb79dc93398d4d0a1)
       </p>
       </detail>
 
