@@ -35,7 +35,7 @@
 
 ### typescript compile
 
-`$ tsc -w`
+`$ npm run tsc`
 
 ### run storybook
 
@@ -44,6 +44,10 @@
 ### test start
 
 `$ npm test -- --watch`
+
+### npm update
+
+`$ npm update`
 
 ## ToDo
 

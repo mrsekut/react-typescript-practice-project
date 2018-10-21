@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import logo from './logo.svg';
+import RxjsComponent from './components/others/rxjs';
 
 class App extends React.Component<{}, {}> {
   constructor(props) {
@@ -14,7 +15,7 @@ class App extends React.Component<{}, {}> {
           <h1 className="App-title">React and TypeScript Test Practice</h1>
         </header>
 
-        {/* tslint:disable-next-line */}
+        <RxjsComponent />
       </div>
     );
   }

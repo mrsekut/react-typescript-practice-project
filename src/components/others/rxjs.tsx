@@ -1,15 +1,17 @@
 import * as React from 'react';
-import { Observable, Subject, ReplaySubject, from, of, range } from 'rxjs';
 
-interface IProps {
-  children: any;
-  onClick?: () => void;
-}
-
-const RxjsComponent: React.SFC<IProps> = ({
-  onClick,
-  children,
-  ...props
-}: IProps) => <button onClick={onClick}>{children}</button>;
+const RxjsComponent: React.SFC<{}> = () => {
+  // tslint:disable-next-line:one-variable-per-declaration
+  // const log = ::console.log;
+  // console.log(log);
+  // const oo = 5 |> double |> double |> increment |> double;
+  // console.log(oo);
+  return (
+    <>
+      ooo
+      <div>ooo</div>
+    </>
+  );
+};
 
 export default RxjsComponent;
