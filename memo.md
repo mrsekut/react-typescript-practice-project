@@ -1,11 +1,10 @@
 # 使ってみたいもの
 
-- projekut の名前変えよう
-- commit message に絵文字を使ってみよう
-
 ## React
 
 - React Fragments
+- HoC
+  - https://postd.cc/react-higher-order-components-in-depth/
 
 ## TypeScript
 
@@ -25,6 +24,10 @@
 
 ## パフォーマンス
 
+- https://recruit-tech.co.jp/blog/2018/09/19/react_spa_performance_tuning/
+- https://www.netlify.com/blog/2018/08/29/using-the-react-devtools-profiler-to-diagnose-react-app-performance-issues/
+- https://qiita.com/muraikenta/items/21fad68c184cdc63250e
+- https://qiita.com/muraikenta/items/21eb5b2e0d1c7c95e3b8
 - shouldComponentUpdate
   - https://hfuji.hatenablog.jp/entry/2017/11/03/183243
   - https://medium.com/@esamatti/react-js-pure-render-performance-anti-pattern-fb88c101332f
@@ -40,6 +43,8 @@
 - Nest
 
 ## アニメーション
+
+- https://qiita.com/nabepon/items/c005a7d4491fd04b453e
 
 ## 非同期処理
 
@@ -143,10 +148,17 @@
 - axios
 - parcel
 - formik
+- Dependabot
+
+  - https://kakakakakku.hatenablog.com/entry/2018/10/12/192502
+  - 依存パッケージがアップデートされたら通知してくれるやつ
 
 - AMP
+- rxjs
+- パターンマッチ
+  - https://github.com/bramstein/funcy/
 
-## Pcoket keywords
+## Poket keywords
 
 - react
 - redux

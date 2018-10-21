@@ -2,8 +2,8 @@
 
 ## Feature
 
-- react
-- typescript
+- React
+- TypeScript
 - styled-components
 - storybook
 
@@ -48,6 +48,7 @@
 ## ToDo
 
 - [ ] 不要なディレクトリやファイルの削除
+- [ ] App ファイルの編集
 - [ ] ts 使ったときコンパイル後ファイルもテストしてるのか
 - [ ] ts err の削除
 - [ ] redux 入れる
@@ -55,3 +56,4 @@
 - [ ] test の為に storybook を入れる
 - [ ] style を styled-components で書く
 - [ ] 必要なら enzyme などの setUp 設定
+- [ ] 練習がてら作ったコンポーネントは src/components/others に入れ、決まったら Atomic の中に入れる
