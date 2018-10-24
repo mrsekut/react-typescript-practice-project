@@ -8,8 +8,7 @@ const RxjsComponent: React.SFC<{}> = () => {
   // console.log(oo);
   return (
     <>
-      ooo
-      <div>ooo</div>
+      <div>hello</div>
     </>
   );
 };
