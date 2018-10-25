@@ -49,6 +49,11 @@
 
 `$ npm update`
 
+## Feature Packages
+
+- React
+- Redux
+
 ## ToDo
 
 - [ ] 不要なディレクトリやファイルの削除
