@@ -1,3 +1,9 @@
+- 整形
+- 型付け
+- いろいろ見てリファクタ
+- 関数など動かす
+- typescript-fsa,s2s,immutable,recompose などをいれる
+
 # 使ってみたいもの
 
 ## React

@@ -2,6 +2,7 @@ import * as React from 'react';
 import './App.css';
 import logo from './logo.svg';
 import RxjsComponent from './components/others/rxjs';
+import DucksContainer from './components/others/DucksContainer';
 
 class App extends React.Component<{}, {}> {
   constructor(props) {
@@ -14,8 +15,8 @@ class App extends React.Component<{}, {}> {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">React and TypeScript Test Practice</h1>
         </header>
-
         <RxjsComponent />
+        <DucksContainer />
       </div>
     );
   }

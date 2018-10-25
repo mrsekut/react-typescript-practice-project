@@ -10,7 +10,8 @@
     "jsx": "react",
     "moduleResolution": "node",
     "rootDir": "src",
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "experimentalDecorators": true
   },
   "exclude": [
     "node_modules",
