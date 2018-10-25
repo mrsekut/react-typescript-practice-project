@@ -10,7 +10,8 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
-    "jsx-no-lambda": false
+    "jsx-no-lambda": false,
+    "member-access": false
   },
   "linterOptions": {
     "exclude": ["config/**/*.js", "node_modules/**/*.ts"]

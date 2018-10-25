@@ -156,7 +156,11 @@
 - AMP
 - rxjs
 - パターンマッチ
+
   - https://github.com/bramstein/funcy/
+
+- componentDidCatch
+  - https://mae.chab.in/archives/60220
 
 ## Poket keywords
 
