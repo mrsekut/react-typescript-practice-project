@@ -4,12 +4,9 @@ interface Props {
   num: number;
 }
 
-const DucksComponent: React.SFC<Props> = ({ num }) => {
-  return (
-    <div>
-      <p>{num}</p>
-    </div>
-  );
-};
-
+const DucksComponent: React.SFC<Props> = ({ num }) => (
+  <>
+    <p>{num}</p>
+  </>
+);
 export default DucksComponent;

@@ -23,19 +23,12 @@ export default class DucksContainer extends React.Component<any, any> {
     super(props);
   }
 
-  // dispatch使いたくない
-  inc(amount: number) {
-    this.props.incrementAmount(amount);
-  }
-
-  dec(amount: number) {
-    this.props.decrementAmount(amount);
-  }
-
   render() {
     return (
       <>
         <DucksComponent num={this.props.num} />
+        <button onClick={() => this.props.incrementAmount(1)}>+</button>
+        <button onClick={() => this.props.decrementAmount(1)}>-</button>
       </>
     );
   }
