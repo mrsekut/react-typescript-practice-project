@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import RxjsComponent from './components/others/rxjs';
+import ContextComponent from './components/others/Context/Context';
 import DucksContainer from './components/others/DucksContainer';
 
 const App = () => (
@@ -10,6 +11,7 @@ const App = () => (
     </Header>
     <RxjsComponent />
     <DucksContainer />
+    <ContextComponent />
   </Wrapper>
 );
 

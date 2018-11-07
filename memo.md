@@ -12,6 +12,8 @@
 
 - ECMAScript の新し目の機能
   - pipeline operator とか
+- readonly
+- mapped types
 
 ## テスト
 
@@ -37,6 +39,8 @@
 - アニメーションのパフォーマンス計測
   - https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations
 - react-perf-devtool
+- react.memo
+  - https://reactjs.org/blog/2018/10/23/react-v-16-6.html#reactmemo
 
 ## TypeScript
 
@@ -53,6 +57,11 @@
 - suspense
   - https://qiita.com/fumihiko-hidaka/items/c3aaedd073f7bf5a685f
 - redux-saga
+- react.lazy
+  - https://reactjs.org/blog/2018/10/23/react-v-16-6.html#reactlazy-code-splitting-with-suspense
+- suspence
+  - https://qiita.com/yoshi_ksk/items/706acf084a7f2c560b26
+  - https://logmi.jp/tech/articles/302611
 
 ## デザイン
 
@@ -155,6 +164,8 @@
   - https://kakakakakku.hatenablog.com/entry/2018/10/12/192502
   - 依存パッケージがアップデートされたら通知してくれるやつ
 
+- context API
+  - https://qiita.com/jkr_2255/items/45079573e0691878eb54#%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%B8%E3%81%AEcontext%E9%81%A9%E7%94%A8componentcontexttype
 - AMP
 - rxjs
 - パターンマッチ
@@ -171,3 +182,4 @@
 - typescript
 - storybook
 - styled-components
+  gtgt

@@ -1,11 +1,11 @@
-import * as React from "react";
+import * as React from 'react';
 
 interface IProps {
   children: any;
   onClick?: () => void;
 }
 
-const Button: React.SFC<IProps> = ({ onClick, children, ...props }: IProps) => (
+const Button: React.SFC<IProps> = ({ onClick, children }: IProps) => (
   <button onClick={onClick}>{children}</button>
 );
 

@@ -6,11 +6,12 @@ import { Provider } from 'react-redux';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
-// TODO ()
 ReactDOM.render(
-  <Provider store={configureStore()}>
-    <App />
-  </Provider>,
+  <div>
+    <Provider store={configureStore()}>
+      <App />
+    </Provider>
+  </div>,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
