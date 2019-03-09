@@ -1,27 +1,18 @@
 import * as React from 'react';
 import styled from 'styled-components';
-// import RxjsComponent from './components/others/rxjs';
-// import DucksContainer from './components/others/DucksContainer';
-// import ContextComponent from './components/others/Context/Context';
-// import PracticeHooks from './components/others/PracticeHooks';
-// import GridLayout from './components/others/GridLayout';
 import PostForm from './components/others/ReduxForm';
+import List from './components/atoms/List';
 
 const App = () => (
   <Wrapper>
     <Header>
       <Title>React and TypeScript Test Practice</Title>
     </Header>
-    {/* <RxjsComponent /> */}
-    {/* <DucksContainer /> */}
-    {/* <GridLayout /> */}
-    {/* <PracticeHooks
-      text="Focused, hard work is the real key
-      to success. Keep your eyes on the goal,
-      and just keep taking the next step
-      towards completing it.`"
-      maxLength={5}
-    /> */}
+    <List
+      data={['Alice', 'Bob', 'Carol', 'Dan', 'Eve', 'Frank']}
+      renderRow={(r: string, i: number) => <div>{`${i}: ${r}`}</div>}
+      empty={<div>みつかりませんでした</div>}
+    />
     <PostForm />
   </Wrapper>
 );
