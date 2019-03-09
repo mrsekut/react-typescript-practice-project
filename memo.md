@@ -14,6 +14,7 @@
   - pipeline operator とか
 - readonly
 - mapped types
+- https://speakerdeck.com/mukai21/typescriptfalsetoransupairutips
 
 ## テスト
 
@@ -182,4 +183,3 @@
 - typescript
 - storybook
 - styled-components
-  gtgt

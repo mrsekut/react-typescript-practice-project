@@ -1,13 +1,27 @@
-import { createStore, combineReducers, Action, Store } from 'redux';
+import {
+  createStore,
+  combineReducers,
+  Action,
+  Store,
+  compose,
+  applyMiddleware
+} from 'redux';
 import reducer, { CounterActions, CounterState } from './modules/DucksModule';
+import { reducer as formReducer } from 'redux-form';
 
-export const configureStore = (): Store => {
-  return createStore(
+/* tslint:disable */
+const composeEnhancers =
+  window['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__'] || compose;
+
+export const configureStore = (): Store =>
+  createStore(
     combineReducers({
-      reducer
-    })
+      reducer,
+      form: formReducer
+    }),
+    composeEnhancers(applyMiddleware())
   );
-};
+
 export default configureStore;
 
 export interface ReduxState {

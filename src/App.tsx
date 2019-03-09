@@ -4,7 +4,8 @@ import styled from 'styled-components';
 // import DucksContainer from './components/others/DucksContainer';
 // import ContextComponent from './components/others/Context/Context';
 // import PracticeHooks from './components/others/PracticeHooks';
-import GridLayout from './components/others/GridLayout';
+// import GridLayout from './components/others/GridLayout';
+import PostForm from './components/others/ReduxForm';
 
 const App = () => (
   <Wrapper>
@@ -13,7 +14,7 @@ const App = () => (
     </Header>
     {/* <RxjsComponent /> */}
     {/* <DucksContainer /> */}
-    <GridLayout />
+    {/* <GridLayout /> */}
     {/* <PracticeHooks
       text="Focused, hard work is the real key
       to success. Keep your eyes on the goal,
@@ -21,6 +22,7 @@ const App = () => (
       towards completing it.`"
       maxLength={5}
     /> */}
+    <PostForm />
   </Wrapper>
 );
 

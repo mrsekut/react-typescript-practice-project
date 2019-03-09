@@ -1,61 +1,170 @@
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const GridLayout = () => {
-  return (
+export default () => (
+  <BlackBackground>
     <Grid>
-      <Board />
-      <Piece color="black" row="4" column="4" />
-      <Piece color="white" row="4" column="5" />
-      <Piece color="white" row="5" column="4" />
-      <Piece color="black" row="5" column="5" />
+      <Area area="ii">
+        <Input />
+      </Area>
+      <Numbers />
+      <Operator />
     </Grid>
-  );
-};
+  </BlackBackground>
+);
 
-export default GridLayout;
+export const areaStyle = css<{ area: string }>`
+  grid-area: ${props => props.area};
+`;
+
+const Area = styled.div`
+  ${areaStyle};
+`;
+
+const Input = styled.input`
+  font-size: 1.8em;
+  border-radius: 0.8em;
+  outline: none;
+  color: white;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5em 1em;
+  width: 100%;
+  box-sizing: border-box;
+`;
+
+const template = `
+  ".  .  so so"
+  "ii ii ii ii"
+  "ac pm pc di"
+  "k7 k8 k9 pw"
+  "k4 k5 k6 mi"
+  "k1 k2 k3 pl"
+  "k0 k0 do eq" / 60px 60px 60px 60px
+`;
 
 const Grid = styled.div`
   display: grid;
-  background: white;
-  box-sizing: border-box;
-  grid-template-columns: repeat(8, 100px);
+  grid-template: ${template};
+  grid-gap: 1em;
 `;
 
-const Cell = styled.div`
-  width: 100px;
-  height: 100px;
+const Circle = styled.div`
+  border-radius: 22px;
+  min-width: 50px;
+  height: 50px;
+  display: flex;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2em;
+  line-height: 1em;
+  /* box-shadow: 1px 8px 29px 0px #666; */
+  cursor: pointer;
+  user-select: none;
+  :active {
+    transition: transform 0.2s, box-shadow 0.2s;
+    transform: translateY(1px);
+    /* box-shadow: 1px 8px 20px 0px #666; */
+  }
 `;
 
-const Area = styled(Cell)`
-  grid-row: ${({ row }: any) => row};
-  grid-column: ${({ column }: any) => column};
+const OrangeCircle = styled(Circle)`
+  background: linear-gradient(
+    0deg,
+    rgba(220, 121, 0, 1) 0%,
+    rgba(255, 161, 0, 1) 100%
+  );
+`;
+const GrayCircle = styled(Circle)`
+  background: linear-gradient(
+    0deg,
+    rgba(140, 140, 130, 1) 0%,
+    rgba(176, 176, 176, 1) 65%
+  );
 `;
 
-// @ts-ignore
-const BoardCell: SFC<any> = styled(Area)`
-  background: green;
-  border: 1px solid black;
-`;
-
-// @ts-ignore
-const Piece: SFC<any> = styled(Area)`
-  border-radius: 100%;
-  width: 90px;
-  height: 90px;
-  margin: 5px;
-  vertical-align: middle;
+const Center = styled.div`
+  align-self: center;
   text-align: center;
-  border: 1px solid transparent;
-  background: ${({ color }: any) => color};
+  width: 100%;
 `;
-// @ts-ignore
-const Board: SFC<{}> = () => {
-  return Array.from({ length: 8 }).map((_, i) => {
-    return Array.from({ length: 8 }).map((x, j) => {
-      const row = i + 1;
-      const column = j + 1;
-      return <BoardCell key={`${row}_${column}`} row={row} column={column} />;
-    });
-  });
+
+export const OrangeButton: React.SFC<any> = ({ children }) => {
+  return (
+    <OrangeCircle>
+      <Center>{children}</Center>
+    </OrangeCircle>
+  );
 };
+export const GrayButton: React.SFC<any> = ({ children }) => {
+  return (
+    <GrayCircle>
+      <Center>{children}</Center>
+    </GrayCircle>
+  );
+};
+
+export const ButtonSamples = () => {
+  return (
+    <>
+      <OrangeButton>1</OrangeButton>
+      <GrayButton>1</GrayButton>
+    </>
+  );
+};
+
+const BlackBackground = styled.div`
+  background: linear-gradient(
+    0deg,
+    rgba(29, 29, 29, 1) 0%,
+    rgba(70, 70, 70, 1) 100%
+  );
+  padding: 1em;
+  border-radius: 20px;
+  width: fit-content;
+  height: max-content;
+`;
+
+const Numbers = () => (
+  <>
+    {Array.from({ length: 10 }).map((_, i) => {
+      return (
+        <Area area={`k${i}`} key={i}>
+          <GrayButton>{i}</GrayButton>
+        </Area>
+      );
+    })}
+  </>
+);
+
+const Operator = () => (
+  <>
+    <Area area="di">
+      <OrangeButton>÷</OrangeButton>
+    </Area>
+    <Area area="pw">
+      <OrangeButton>×</OrangeButton>
+    </Area>
+    <Area area="mi">
+      <OrangeButton>-</OrangeButton>
+    </Area>
+    <Area area="pl">
+      <OrangeButton>+</OrangeButton>
+    </Area>
+    <Area area="do">
+      <GrayButton>.</GrayButton>
+    </Area>
+    <Area area="eq">
+      <OrangeButton>=</OrangeButton>
+    </Area>
+    <Area area="ac">
+      <OrangeButton>AC</OrangeButton>
+    </Area>
+    <Area area="pm">
+      <OrangeButton>+/-</OrangeButton>
+    </Area>
+    <Area area="pc">
+      <OrangeButton>%</OrangeButton>
+    </Area>
+  </>
+);
