@@ -6,12 +6,14 @@
     "interface-name": false,
     "ordered-imports": false,
     "jsx-boolean-value": false,
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "strictNullChecks": true,
     "jsx-no-lambda": false,
-    "member-access": false
+    "no-any": false,
+    "max-classes-per-file": [true, 10],
+    "member-access": false,
+    "no-conditional-assignment": false,
+    "curly": false,
+    "interface-over-type-literal": false,
+    "variable-name": false
   },
   "linterOptions": {
     "exclude": ["config/**/*.js", "node_modules/**/*.ts"]
