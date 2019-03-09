@@ -8,12 +8,12 @@ type Props = {
 
 class PostForm extends React.Component<Props, {}> {
   render() {
-    const formState = this.props.formState; // これでアクセスできる
-    const value = formState.values.name;
+    // const formState = this.props.formState; // これでアクセスできる
+    // const value = formState.values.name;
     return (
       <form>
         <Field name="name" component="input" type="text" />
-        <div>name: {value}</div>
+        {/* <div>name: {value}</div> */}
       </form>
     );
   }
