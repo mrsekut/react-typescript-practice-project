@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PostForm from './components/others/ReduxForm';
 // import List from './components/atoms/List';
 import Memo from './components/others/Memo';
+import Modal from './components/others/Modal';
 
 const App = () => (
   <Wrapper>
@@ -16,6 +17,9 @@ const App = () => (
     /> */}
 
     <Memo />
+    <Modal>
+      <div>oooo</div>
+    </Modal>
 
     <PostForm />
   </Wrapper>
