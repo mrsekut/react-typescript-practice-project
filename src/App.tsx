@@ -1,7 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import PostForm from './components/others/ReduxForm';
-import List from './components/atoms/List';
 import Memo from './components/others/Memo';
 import Modal from './components/others/Modal';
 
@@ -10,11 +9,6 @@ const App = () => (
     <Header>
       <Title>React and TypeScript Test Practice</Title>
     </Header>
-    <List
-      data={['Alice', 'Bob', 'Carol', 'Dan', 'Eve', 'Frank']}
-      renderRow={(r, i) => <div>{`${i}: ${r}`}</div>}
-      empty={<div>みつかりませんでした</div>}
-    />
 
     <Memo />
     <Modal>
