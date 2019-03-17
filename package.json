@@ -8,6 +8,7 @@
     "@types/enzyme-to-json": "^1.5.2",
     "@types/react-redux": "^6.0.9",
     "@types/redux": "^3.6.0",
+    "@types/storybook__react": "^4.0.1",
     "enzyme-to-json": "^3.3.4",
     "react": "16.8.4",
     "react-dom": "16.8.4",

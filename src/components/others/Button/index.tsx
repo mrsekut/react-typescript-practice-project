@@ -5,7 +5,7 @@ interface IProps {
   onClick?: () => void;
 }
 
-const Button: React.SFC<IProps> = ({ onClick, children }: IProps) => (
+const Button: React.FC<IProps> = ({ onClick, children }) => (
   <button onClick={onClick}>{children}</button>
 );
 

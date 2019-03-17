@@ -1,18 +1,32 @@
 import * as React from 'react';
 
-interface ListProps {
-  renderRow: (row: any, index: number) => void;
-  data: any[];
+interface ListProps<T> {
+  renderRow: (row: T, idx?: number) => void;
+  data: T[];
   empty: React.ReactChild;
 }
 
-const List: React.FC<ListProps> = ({ renderRow, data, empty }) => (
+type ListComponent = <T>(
+  props: ListProps<T>
+) => React.ReactElement<ListProps<T>>;
+
+type GenericFC<P = {}> = Pick<
+  React.FC<P>,
+  'propTypes' | 'contextTypes' | 'defaultProps' | 'displayName'
+> &
+  ListComponent;
+
+// type GenericFC<P = {}> = {
+//   <T>(props: ListProps<T>, context?: any): React.ReactElement<T> | null;
+//   x?: Pick<
+//     React.FC<P>,
+//     'propTypes' | 'contextTypes' | 'defaultProps' | 'displayName'
+//   >;
+// };
+
+const List: GenericFC = ({ renderRow, data, empty }) => (
   <>
-    {!!data ? (
-      data.map((row, index) => renderRow(row, index))
-    ) : (
-      <div>{empty}</div>
-    )}
+    {data.length ? data.map((row, index) => renderRow(row, index)) : { empty }}
   </>
 );
 export default List;
